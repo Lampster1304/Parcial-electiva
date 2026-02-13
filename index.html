@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcial Electiva - CI/CD Demo</title>
+    <title>Parcial Electiva - CI/CD</title>
     <style>
         * {
             margin: 0;
@@ -12,104 +12,106 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
+            color: #333;
         }
 
         .container {
             background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            text-align: center;
+            padding: 60px 40px;
             max-width: 600px;
-            animation: fadeIn 0.5s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            width: 100%;
+            border: 1px solid #e0e0e0;
         }
 
         h1 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 2.5em;
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #000;
         }
 
-        .badge {
-            display: inline-block;
-            background: #4caf50;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1em;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
             font-size: 0.9em;
-            margin: 10px 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #999;
+            margin-bottom: 15px;
         }
 
-        .info {
-            margin: 20px 0;
-            padding: 20px;
-            background: #f5f5f5;
-            border-radius: 10px;
-            line-height: 1.6;
-        }
-
-        .features {
+        ul {
             list-style: none;
-            margin-top: 20px;
         }
 
-        .features li {
-            padding: 10px;
-            margin: 5px 0;
-            background: #e8eaf6;
-            border-radius: 5px;
-            transition: transform 0.2s;
+        ul li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95em;
         }
 
-        .features li:hover {
-            transform: translateX(5px);
+        ul li:last-child {
+            border-bottom: none;
         }
 
         .footer {
-            margin-top: 30px;
-            color: #666;
-            font-size: 0.9em;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.85em;
+            color: #999;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #000;
+            color: white;
+            font-size: 0.8em;
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Parcial Electiva</h1>
-        <div class="badge">CI/CD Activado</div>
+        <h1>Parcial Electiva</h1>
+        <p class="subtitle">Integración Continua y Despliegue Automático</p>
 
-        <div class="info">
-            <p><strong>Proyecto de Integración Continua</strong></p>
-            <p>Esta página se despliega automáticamente usando GitHub Actions y Surge.sh</p>
+        <div class="section">
+            <h2>Descripción</h2>
+            <p>Sistema de despliegue automático usando GitHub Actions y Surge.sh</p>
         </div>
 
-        <ul class="features">
-            <li>✅ Repositorio Git Local</li>
-            <li>✅ GitHub Repository</li>
-            <li>✅ GitHub Actions Workflow</li>
-            <li>✅ Despliegue automático en Surge.sh</li>
-        </ul>
+        <div class="section">
+            <h2>Componentes</h2>
+            <ul>
+                <li>Repositorio Git Local</li>
+                <li>GitHub Repository</li>
+                <li>GitHub Actions Workflow</li>
+                <li>Despliegue automático en Surge.sh</li>
+            </ul>
+        </div>
 
         <div class="footer">
-            <p>Desplegado con ❤️ usando GitHub Actions</p>
-            <p style="margin-top: 10px; color: #4caf50; font-weight: bold;">✅ Prueba de CI/CD - 12 de Febrero 2026</p>
+            <span class="status">LIVE</span>
+            <p style="margin-top: 12px;">Desplegado automáticamente mediante GitHub Actions</p>
         </div>
     </div>
 </body>
