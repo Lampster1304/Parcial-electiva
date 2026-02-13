@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Electiva - CI/CD Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 600px;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+
+        .info {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            line-height: 1.6;
+        }
+
+        .features {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .features li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #e8eaf6;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .features li:hover {
+            transform: translateX(5px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Parcial Electiva</h1>
+        <div class="badge">CI/CD Activado</div>
+
+        <div class="info">
+            <p><strong>Proyecto de Integración Continua</strong></p>
+            <p>Esta página se despliega automáticamente usando GitHub Actions y Surge.sh</p>
+        </div>
+
+        <ul class="features">
+            <li>✅ Repositorio Git Local</li>
+            <li>✅ GitHub Repository</li>
+            <li>✅ GitHub Actions Workflow</li>
+            <li>✅ Despliegue automático en Surge.sh</li>
+        </ul>
+
+        <div class="footer">
+            <p>Desplegado con ❤️ usando GitHub Actions</p>
+        </div>
+    </div>
+</body>
+</html>
